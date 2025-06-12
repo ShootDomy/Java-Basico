@@ -30,5 +30,9 @@ public class App {
         System.out.println("Animal: " + animal.nombre + " " + animal.edad + " Hace sonido: " + animal.hacerSonido());
         System.out.println("Animal: " + gato.nombre + " " + gato.edad + " Hace sonido: " + gato.hacerSonido());
         System.out.println("Animal: " + perro.nombre + " " + perro.edad + " Hace sonido: " + perro.hacerSonido());
+
+        // Atributos estaticos
+        System.out.println("Contador de animales: " + Animal.getContadorAnimales());
+        System.out.println("Nombre de la veterinaria: " + Veterinaria.nombre);
     }
 }
