@@ -1,3 +1,5 @@
+package basico;
+
 public class Persona {
   // Atributos
   private String nombre;

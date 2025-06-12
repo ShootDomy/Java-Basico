@@ -1,3 +1,5 @@
+package basico;
+
 public class Gato extends Animal {
   public Gato(String nombre, int edad) {
     // Con super llamamos al constructor de la superclase (informacion heredada)
@@ -9,4 +11,5 @@ public class Gato extends Animal {
   public String hacerSonido() {
     return "Miau!";
   }
+
 }
