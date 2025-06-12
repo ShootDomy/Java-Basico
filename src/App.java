@@ -13,13 +13,13 @@ public class App {
         // p.esEstudiante = true;
         // p.carrera = c;
 
-        Persona p = new Persona("Domenica", "Cañizares", 25, "Ingeniería de Software", 10, true);
+        Persona p = new Persona("Domenica", "Cañizares", 25/* , "Ingeniería de Software", 10, true */);
 
-        System.out.println(p.darNombreCompleto() + " " + p.edad);
+        System.out.println(p.darNombreCompleto() + " " + p.getEdad());
 
         String saludado = "Domenica";
         System.out.println(p.enviarSaludo(saludado));
 
-        System.out.println(p.carrera.nombre);
+        // System.out.println(p.carrera.nombre);
     }
 }
