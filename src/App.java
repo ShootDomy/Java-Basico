@@ -1,5 +1,7 @@
 import ClasesAbstractas.Circulo;
 import ClasesAbstractas.Rectangulo;
+import Excepciones.Calculadora;
+import Excepciones.CalculadoraException;
 import Interfaz.Delfin;
 import Interfaz.Pulpo;
 import basico.Animal;
@@ -81,5 +83,43 @@ public class App {
 
                 delfin.alimentarse();
                 pulpo.alimentarse();
+
+                /**
+                 * TODO: Manejo de excepciones Unchecked
+                 */
+                long numero = 10;
+                int numero2 = 15;
+                int resultado;
+
+                // System.out.println(numero / numero2);
+                // System.out.println("Esto va a dar un error");
+
+                try {
+                        // casteo de long a int
+                        resultado = (int) numero / numero2;
+                        System.out.println(resultado);
+                } catch (Exception e) {
+                        e.printStackTrace();
+                        System.out.println("Esto va a dar un error");
+                }
+
+                /**
+                 * TODO: Manejo de excepciones Checked
+                 */
+
+                int num1 = 10;
+                int num2 = 0;
+
+                Calculadora calculadora = new Calculadora();
+                try {
+                        resultado = calculadora.dividir(num1, num2);
+                        System.out.println(resultado);
+                } catch (CalculadoraException e) {
+                        e.printStackTrace();
+                        System.out.println("Esto va a dar un error");
+                } finally {
+                        System.out.println("Calculo finalizado");
+                }
+
         }
 }
