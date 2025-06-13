@@ -1,5 +1,7 @@
 import ClasesAbstractas.Circulo;
 import ClasesAbstractas.Rectangulo;
+import Interfaz.Delfin;
+import Interfaz.Pulpo;
 import basico.Animal;
 import basico.Gato;
 import basico.Perro;
@@ -33,6 +35,9 @@ public class App {
 
                 // System.out.println(p.carrera.nombre);
 
+                /**
+                 * TODO: Carpeta basico
+                 */
                 Animal animal = new Animal("Bestia", 10);
                 Gato gato = new Gato("Gatito", 5);
                 Perro perro = new Perro("Perrito", 7);
@@ -62,5 +67,19 @@ public class App {
                 rectangulo.imprimirInformacion();
                 System.out.println("El area es: " + rectangulo.calcularArea());
 
+                /**
+                 * TODO: Carpeta Interfaces
+                 */
+                Delfin delfin = new Delfin("Delfin");
+                Pulpo pulpo = new Pulpo("Pulpo", 8);
+
+                delfin.nadar();
+                pulpo.nadar();
+
+                delfin.comunicarse();
+                pulpo.comunicarse();
+
+                delfin.alimentarse();
+                pulpo.alimentarse();
         }
 }
